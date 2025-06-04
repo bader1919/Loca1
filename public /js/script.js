@@ -110,11 +110,6 @@ function askLocationPermission() {
           askLocationPermission();
         } else {
           alert("Cannot continue without location access.");
-        }
-      } else {
-        alert("Failed to get your location. Try again.");
-        console.error(error);
-      }
     },
     { timeout: 10000, maximumAge: 0, enableHighAccuracy: true }
   );
